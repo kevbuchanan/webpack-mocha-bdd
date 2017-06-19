@@ -1,0 +1,14 @@
+{
+  "name": "webpack-mocha-bdd",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "test": "webpack && mocha build/js/test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "webpack": "^1.13.0"
+  },
+  "dependencies": {}
+}
