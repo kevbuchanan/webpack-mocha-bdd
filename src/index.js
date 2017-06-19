@@ -1,2 +1,2 @@
-const helloWorld = require("./hello/helloWorld");
-console.log(helloWorld.hello());
+import { hello } from "./hello/helloWorld";
+console.log(hello());

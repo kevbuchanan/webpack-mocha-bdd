@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: {
     app: "./src/index.js",
@@ -5,14 +7,19 @@ module.exports = {
   },
   output: {
     filename: "js/[name].js",
-    path: "./build",
+    path: path.resolve(__dirname, "./build"),
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loaders: [],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2015'],
+          }
+        }
       }
     ]
   }
