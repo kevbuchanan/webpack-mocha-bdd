@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack",
+    "app": "webpack && node ./build/js/app.js",
     "test": "webpack && mocha build/js/test.js"
   },
   "devDependencies": {
