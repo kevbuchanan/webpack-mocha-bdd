@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = {
   entry: {
     app: "./src/index.js",
-    test: "./test/index.js",
   },
   output: {
     filename: "js/[name].js",
